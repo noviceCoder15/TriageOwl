@@ -1,0 +1,23 @@
+{
+  "platform": "Linux-6.1.155-x86_64-with-glibc2.43",
+  "python": "3.12.14",
+  "results": [
+    {
+      "events": 1000,
+      "repeats": 3,
+      "min_ms": 14.02,
+      "median_ms": 14.21,
+      "max_ms": 15.18,
+      "backend_peak_rss_mb": 174.08
+    },
+    {
+      "events": 10000,
+      "repeats": 3,
+      "min_ms": 157.38,
+      "median_ms": 160.0,
+      "max_ms": 161.22,
+      "backend_peak_rss_mb": 174.08
+    }
+  ],
+  "limitations": "Synthetic mostly-benign in-process workload. Excludes HTTP/browser/SQLite/SLM. Lifetime backend peak RSS, not per-run incremental RAM. Not representative of worst-case alert volume. Rerun on target laptop."
+}

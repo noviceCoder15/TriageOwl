@@ -1,0 +1,45 @@
+test_analyze_history_report (test_api.APITests.test_analyze_history_report) ... skipped 'Install backend/requirements-test.txt to run FastAPI HTTP tests.'
+test_bad_host (test_api.APITests.test_bad_host) ... skipped 'Install backend/requirements-test.txt to run FastAPI HTTP tests.'
+test_cross_origin_write (test_api.APITests.test_cross_origin_write) ... skipped 'Install backend/requirements-test.txt to run FastAPI HTTP tests.'
+test_health (test_api.APITests.test_health) ... skipped 'Install backend/requirements-test.txt to run FastAPI HTTP tests.'
+test_invalid_input (test_api.APITests.test_invalid_input) ... skipped 'Install backend/requirements-test.txt to run FastAPI HTTP tests.'
+test_missing (test_api.APITests.test_missing) ... skipped 'Install backend/requirements-test.txt to run FastAPI HTTP tests.'
+test_mocked_model_persistence (test_api.APITests.test_mocked_model_persistence) ... skipped 'Install backend/requirements-test.txt to run FastAPI HTTP tests.'
+test_model_down (test_api.APITests.test_model_down) ... skipped 'Install backend/requirements-test.txt to run FastAPI HTTP tests.'
+test_approval (test_core.CoreTests.test_approval) ... ok
+test_brute (test_core.CoreTests.test_brute) ... ok
+test_casefold_opt_in (test_core.CoreTests.test_casefold_opt_in) ... ok
+test_config_invalid (test_core.CoreTests.test_config_invalid) ... ok
+test_correlation_span (test_core.CoreTests.test_correlation_span) ... ok
+test_cross_source (test_core.CoreTests.test_cross_source) ... ok
+test_csv_bom_and_quotes (test_core.CoreTests.test_csv_bom_and_quotes) ... ok
+test_distributed (test_core.CoreTests.test_distributed) ... ok
+test_json_wrappers (test_core.CoreTests.test_json_wrappers) ... ok
+test_loopback_only (test_core.CoreTests.test_loopback_only) ... ok
+test_malformed (test_core.CoreTests.test_malformed) ... ok
+test_missing_ip_still_correlates (test_core.CoreTests.test_missing_ip_still_correlates) ... ok
+test_mocked_structured_model (test_core.CoreTests.test_mocked_structured_model) ... ok
+test_model_malformed_and_length (test_core.CoreTests.test_model_malformed_and_length) ... ok
+test_model_reference_checks (test_core.CoreTests.test_model_reference_checks) ... ok
+test_model_unknown_ip (test_core.CoreTests.test_model_unknown_ip) ... ok
+test_normalization_preserves_original (test_core.CoreTests.test_normalization_preserves_original) ... ok
+test_offhours_failure (test_core.CoreTests.test_offhours_failure) ... ok
+test_partial_ids (test_core.CoreTests.test_partial_ids) ... ok
+test_persistence_reporting (test_core.CoreTests.test_persistence_reporting) ... ok
+test_repeat_not_inflate (test_core.CoreTests.test_repeat_not_inflate) ... ok
+test_samples (test_core.CoreTests.test_samples) ... ok
+test_sparse_brute (test_core.CoreTests.test_sparse_brute) ... ok
+test_spray (test_core.CoreTests.test_spray) ... ok
+test_success_sequence (test_core.CoreTests.test_success_sequence) ... ok
+test_sysmon_id_requires_provider (test_core.CoreTests.test_sysmon_id_requires_provider) ... ok
+test_threshold (test_core.CoreTests.test_threshold) ... ok
+test_timezone (test_core.CoreTests.test_timezone) ... ok
+test_unknown_entities_separate (test_core.CoreTests.test_unknown_entities_separate) ... ok
+test_unknown_event (test_core.CoreTests.test_unknown_event) ... ok
+test_window (test_core.CoreTests.test_window) ... ok
+test_wrong_account_success (test_core.CoreTests.test_wrong_account_success) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 0.016s
+
+OK (skipped=8)

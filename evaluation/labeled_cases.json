@@ -1,0 +1,393 @@
+[
+  {
+    "name": "account_failure_count_2",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:01:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}]"
+      }
+    ],
+    "expected_rules": [],
+    "config": {}
+  },
+  {
+    "name": "account_failure_count_4",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:01:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:02:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:03:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}]"
+      }
+    ],
+    "expected_rules": [],
+    "config": {}
+  },
+  {
+    "name": "account_failure_count_5",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:01:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:02:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:03:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:04:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}]"
+      }
+    ],
+    "expected_rules": [
+      "brute"
+    ],
+    "config": {}
+  },
+  {
+    "name": "account_failure_count_6",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:01:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:02:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:03:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:04:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:05:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}]"
+      }
+    ],
+    "expected_rules": [
+      "brute"
+    ],
+    "config": {}
+  },
+  {
+    "name": "account_failure_count_8",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:01:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:02:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:03:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:04:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:05:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:06:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:07:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}]"
+      }
+    ],
+    "expected_rules": [
+      "brute"
+    ],
+    "config": {}
+  },
+  {
+    "name": "password_spray_six_accounts",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"user0\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:01:00Z\", \"user\": \"user1\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:02:00Z\", \"user\": \"user2\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:03:00Z\", \"user\": \"user3\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:04:00Z\", \"user\": \"user4\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:05:00Z\", \"user\": \"user5\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}]"
+      }
+    ],
+    "expected_rules": [
+      "spray"
+    ],
+    "config": {}
+  },
+  {
+    "name": "password_spray_four_accounts",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"user0\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:01:00Z\", \"user\": \"user1\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:02:00Z\", \"user\": \"user2\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:03:00Z\", \"user\": \"user3\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}]"
+      }
+    ],
+    "expected_rules": [],
+    "config": {}
+  },
+  {
+    "name": "rotating_sources_six",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.1\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:01:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.2\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:02:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.3\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:03:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.4\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:04:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.5\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:05:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.6\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}]"
+      }
+    ],
+    "expected_rules": [
+      "brute",
+      "distributed"
+    ],
+    "config": {}
+  },
+  {
+    "name": "rotating_sources_below_threshold",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.1\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:01:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.2\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:02:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.3\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:03:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.4\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}]"
+      }
+    ],
+    "expected_rules": [],
+    "config": {}
+  },
+  {
+    "name": "failures_then_success",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:01:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:02:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:03:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:04:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:06:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_success\", \"detail\": \"Synthetic test\"}]"
+      }
+    ],
+    "expected_rules": [
+      "brute",
+      "success_after"
+    ],
+    "config": {}
+  },
+  {
+    "name": "success_wrong_account",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:01:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:02:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:03:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:04:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:06:00Z\", \"user\": \"bob\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_success\", \"detail\": \"Synthetic test\"}]"
+      }
+    ],
+    "expected_rules": [
+      "brute"
+    ],
+    "config": {}
+  },
+  {
+    "name": "failures_missing_ip_device",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:01:00Z\", \"user\": \"alice\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:02:00Z\", \"user\": \"alice\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:03:00Z\", \"user\": \"alice\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:04:00Z\", \"user\": \"alice\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}]"
+      }
+    ],
+    "expected_rules": [
+      "brute"
+    ],
+    "config": {}
+  },
+  {
+    "name": "offhours_success",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T23:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_success\", \"detail\": \"Synthetic test\"}]"
+      }
+    ],
+    "expected_rules": [
+      "offhours"
+    ],
+    "config": {}
+  },
+  {
+    "name": "offhours_failure_burst",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T23:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T23:01:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T23:02:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T23:03:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T23:04:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}]"
+      }
+    ],
+    "expected_rules": [
+      "brute",
+      "offhours_failure"
+    ],
+    "config": {}
+  },
+  {
+    "name": "single_offhours_failure",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T23:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}]"
+      }
+    ],
+    "expected_rules": [],
+    "config": {}
+  },
+  {
+    "name": "working_hours_success",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_success\", \"detail\": \"Synthetic test\"}]"
+      }
+    ],
+    "expected_rules": [],
+    "config": {}
+  },
+  {
+    "name": "approved_admin_change",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"group_change\", \"detail\": \"Synthetic test\", \"approved\": true}]"
+      }
+    ],
+    "expected_rules": [],
+    "config": {}
+  },
+  {
+    "name": "unapproved_admin_change",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"group_change\", \"detail\": \"Synthetic test\", \"approved\": false}]"
+      }
+    ],
+    "expected_rules": [
+      "priv"
+    ],
+    "config": {}
+  },
+  {
+    "name": "process_powershell",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"process_start\", \"detail\": \"powershell.exe -encodedcommand SYNTHETIC\"}]"
+      }
+    ],
+    "expected_rules": [
+      "proc"
+    ],
+    "config": {}
+  },
+  {
+    "name": "process_credential",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"process_start\", \"detail\": \"mimikatz sekurlsa::logonpasswords\"}]"
+      }
+    ],
+    "expected_rules": [
+      "proc"
+    ],
+    "config": {}
+  },
+  {
+    "name": "process_certutil",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"process_start\", \"detail\": \"certutil.exe -urlcache -split -f https://example.invalid/x\"}]"
+      }
+    ],
+    "expected_rules": [
+      "proc"
+    ],
+    "config": {}
+  },
+  {
+    "name": "process_task",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"process_start\", \"detail\": \"schtasks.exe /create /tn TEST /tr notepad.exe\"}]"
+      }
+    ],
+    "expected_rules": [
+      "proc"
+    ],
+    "config": {}
+  },
+  {
+    "name": "process_mshta",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"process_start\", \"detail\": \"mshta.exe https://example.invalid/test\"}]"
+      }
+    ],
+    "expected_rules": [
+      "proc"
+    ],
+    "config": {}
+  },
+  {
+    "name": "benign_editor",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"process_start\", \"detail\": \"notepad.exe\"}]"
+      }
+    ],
+    "expected_rules": [],
+    "config": {}
+  },
+  {
+    "name": "benign_product",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"process_start\", \"detail\": \"Product code NC-2026-001\"}]"
+      }
+    ],
+    "expected_rules": [],
+    "config": {}
+  },
+  {
+    "name": "benign_date",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"process_start\", \"detail\": \"2026-11-23 scheduled meeting\"}]"
+      }
+    ],
+    "expected_rules": [],
+    "config": {}
+  },
+  {
+    "name": "benign_literal",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"process_start\", \"detail\": \"Documentation mentions mimikatz in a filename.txt\"}]"
+      }
+    ],
+    "expected_rules": [],
+    "config": {}
+  },
+  {
+    "name": "hard_negative_approved_inventory",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"process_start\", \"detail\": \"whoami.exe /priv\"}]"
+      }
+    ],
+    "expected_rules": [],
+    "config": {}
+  },
+  {
+    "name": "hard_negative_approved_encoded_admin",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"process_start\", \"detail\": \"powershell.exe -enc APPROVED_ADMIN_PLACEHOLDER\"}]"
+      }
+    ],
+    "expected_rules": [],
+    "config": {}
+  },
+  {
+    "name": "case_sensitive_split",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:01:00Z\", \"user\": \"Alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:02:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:03:00Z\", \"user\": \"Alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:04:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:05:00Z\", \"user\": \"Alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}]"
+      }
+    ],
+    "expected_rules": [],
+    "config": {}
+  },
+  {
+    "name": "case_insensitive_merge",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:01:00Z\", \"user\": \"Alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:02:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:03:00Z\", \"user\": \"Alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:04:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:05:00Z\", \"user\": \"Alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}]"
+      }
+    ],
+    "expected_rules": [
+      "brute"
+    ],
+    "config": {
+      "case_insensitive_users": true
+    }
+  },
+  {
+    "name": "wide_time_separation",
+    "files": [
+      {
+        "filename": "test.json",
+        "content": "[{\"time\": \"2026-11-23T12:00:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:11:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:22:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:33:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}, {\"time\": \"2026-11-23T12:44:00Z\", \"user\": \"alice\", \"device\": \"WS-01\", \"ip\": \"192.0.2.10\", \"event\": \"login_failed\", \"detail\": \"Synthetic test\"}]"
+      }
+    ],
+    "expected_rules": [],
+    "config": {}
+  }
+]

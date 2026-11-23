@@ -1,0 +1,71 @@
+{
+  "basis": "Micro-averaged case/rule presence. Repeated occurrences within a case counted once; not event/incident precision.",
+  "dataset": "Hand-authored synthetic development cases, NOT an independent unseen or real-world benchmark.",
+  "cases": 32,
+  "metrics": {
+    "tp": 20,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.8696,
+    "recall": 1.0
+  },
+  "per_rule": {
+    "brute": {
+      "tp": 9,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "spray": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "distributed": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "success_after": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "offhours": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "offhours_failure": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "priv": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "proc": {
+      "tp": 5,
+      "fp": 3,
+      "fn": 0,
+      "precision": 0.625,
+      "recall": 1.0
+    }
+  },
+  "python": "3.12.3"
+}

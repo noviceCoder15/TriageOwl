@@ -1,0 +1,638 @@
+{
+ "summary": {
+  "cases": 42,
+  "unsupported_withheld": "25/28",
+  "supported_kept": "14/14",
+  "recall_of_bad": 0.8929,
+  "supported_pass_rate": 1.0,
+  "known_gaps_accepted": 3,
+  "known_gap_cases": 3,
+  "mismatches_excluding_known_gaps": []
+ },
+ "tally": {
+  "tp": 25,
+  "fp": 0,
+  "fn": 3,
+  "tn": 14
+ },
+ "cases": [
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E17",
+    "S1-E18",
+    "S1-E19",
+    "S1-E20",
+    "S1-E21"
+   ],
+   "statement": "rahul.m had five failed logins on SRV-DB01 from 185.220.101.4 between 02:10 and 02:14.",
+   "expect": "accept",
+   "category": "supported",
+   "got": "accept",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E17",
+    "S1-E18",
+    "S1-E19",
+    "S1-E20",
+    "S1-E21"
+   ],
+   "statement": "The failures for rahul.m are spaced about one minute apart.",
+   "expect": "accept",
+   "category": "supported",
+   "got": "accept",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E21",
+    "S1-E26"
+   ],
+   "statement": "A successful RDP logon for rahul.m followed the last failed login by about 5 minutes.",
+   "expect": "accept",
+   "category": "supported",
+   "got": "accept",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E27"
+   ],
+   "statement": "rahul.m was added to Administrators and no approval is recorded.",
+   "expect": "accept",
+   "category": "supported",
+   "got": "accept",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E28"
+   ],
+   "statement": "powershell.exe ran with -enc on SRV-DB01 at 02:27.",
+   "expect": "accept",
+   "category": "supported",
+   "got": "accept",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "interpretations",
+   "evidence_ids": [
+    "S1-E26",
+    "S1-E27",
+    "S1-E28"
+   ],
+   "statement": "A logon followed by an administrator group change and an encoded PowerShell command may indicate rapid post-logon escalation.",
+   "expect": "accept",
+   "category": "supported",
+   "got": "accept",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "interpretations",
+   "evidence_ids": [
+    "S1-E17",
+    "S1-E18",
+    "S1-E19",
+    "S1-E20",
+    "S1-E21"
+   ],
+   "statement": "Repeated failures from one external IP could be password guessing, but shared egress is not excluded.",
+   "expect": "accept",
+   "category": "supported",
+   "got": "accept",
+   "correct": true
+  },
+  {
+   "sample": "endpoint",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E2"
+   ],
+   "statement": "guest was added to local Administrators on WS-11 at 14:05 with approved set to false.",
+   "expect": "accept",
+   "category": "supported",
+   "got": "accept",
+   "correct": true
+  },
+  {
+   "sample": "endpoint",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E2",
+    "S1-E3"
+   ],
+   "statement": "The encoded PowerShell command on WS-11 came 2 minutes after the group change for guest.",
+   "expect": "accept",
+   "category": "supported",
+   "got": "accept",
+   "correct": true
+  },
+  {
+   "sample": "endpoint",
+   "incident": 1,
+   "section": "interpretations",
+   "evidence_ids": [
+    "S1-E2",
+    "S1-E3"
+   ],
+   "statement": "This sequence may mean the new administrator rights were used straight away.",
+   "expect": "accept",
+   "category": "supported",
+   "got": "accept",
+   "correct": true
+  },
+  {
+   "sample": "rotating",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E1",
+    "S1-E2",
+    "S1-E3",
+    "S1-E4",
+    "S1-E5"
+   ],
+   "statement": "Failed logins for alice came from 5 different IPs, 192.0.2.1 to 192.0.2.5, over 4 minutes.",
+   "expect": "accept",
+   "category": "supported",
+   "got": "accept",
+   "correct": true
+  },
+  {
+   "sample": "rotating",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E1"
+   ],
+   "statement": "The first failed login for alice was at 12:00 from 192.0.2.1.",
+   "expect": "accept",
+   "category": "supported",
+   "got": "accept",
+   "correct": true
+  },
+  {
+   "sample": "rotating",
+   "incident": 1,
+   "section": "interpretations",
+   "evidence_ids": [
+    "S1-E1",
+    "S1-E2",
+    "S1-E3",
+    "S1-E4",
+    "S1-E5"
+   ],
+   "statement": "Rotating source addresses against one account may be an attempt to avoid per-IP lockout.",
+   "expect": "accept",
+   "category": "supported",
+   "got": "accept",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E17",
+    "S1-E18",
+    "S1-E19",
+    "S1-E20",
+    "S1-E21"
+   ],
+   "statement": "rahul.m had five failed logins from 185.220.101.9.",
+   "expect": "reject",
+   "category": "invented IP",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E26"
+   ],
+   "statement": "A successful logon for rahul.m came from 10.9.9.9.",
+   "expect": "reject",
+   "category": "invented IP",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E17",
+    "S1-E18",
+    "S1-E19",
+    "S1-E20",
+    "S1-E21"
+   ],
+   "statement": "rahul.m had five failed logins between 03:10 and 03:14.",
+   "expect": "reject",
+   "category": "invented time",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E17",
+    "S1-E18",
+    "S1-E19",
+    "S1-E20",
+    "S1-E21"
+   ],
+   "statement": "The failures occurred on 2026-11-21.",
+   "expect": "reject",
+   "category": "invented date",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E17",
+    "S1-E18",
+    "S1-E19",
+    "S1-E20",
+    "S1-E21"
+   ],
+   "statement": "The user admin.k also failed to log in from 185.220.101.4.",
+   "expect": "reject",
+   "category": "invented user",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E28"
+   ],
+   "statement": "cmd.exe launched mimikatz64 on SRV-DB01.",
+   "expect": "reject",
+   "category": "invented command",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "endpoint",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E2"
+   ],
+   "statement": "guest was added to Administrators on WS-12.",
+   "expect": "reject",
+   "category": "invented device",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E17",
+    "S1-E18",
+    "S1-E19",
+    "S1-E20",
+    "S1-E21"
+   ],
+   "statement": "rahul.m had twelve failed logins from 185.220.101.4.",
+   "expect": "reject",
+   "category": "wrong count",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E17",
+    "S1-E18"
+   ],
+   "statement": "Six failed logins were seen for rahul.m.",
+   "expect": "reject",
+   "category": "wrong count",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "rotating",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E1",
+    "S1-E2",
+    "S1-E3",
+    "S1-E4",
+    "S1-E5"
+   ],
+   "statement": "Failed logins for alice came from 3 different IPs.",
+   "expect": "reject",
+   "category": "wrong count",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E21",
+    "S1-E26"
+   ],
+   "statement": "The successful logon came 45 minutes after the last failure.",
+   "expect": "reject",
+   "category": "wrong duration",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E17",
+    "S1-E18",
+    "S1-E19",
+    "S1-E20",
+    "S1-E21"
+   ],
+   "statement": "The same account was targeted by the backup server SRV-FILE02.",
+   "expect": "reject",
+   "category": "invented device",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E17"
+   ],
+   "statement": "rahul.m successfully logged in at 02:10.",
+   "expect": "reject",
+   "category": "wrong event type",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E26"
+   ],
+   "statement": "rahul.m had failed logins before the logon.",
+   "expect": "reject",
+   "category": "wrong event type",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E26"
+   ],
+   "statement": "rahul.m was added to Administrators.",
+   "expect": "reject",
+   "category": "wrong event type",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E17"
+   ],
+   "statement": "powershell.exe was executed by rahul.m.",
+   "expect": "reject",
+   "category": "wrong event type",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E27"
+   ],
+   "statement": "rahul.m was added to Administrators and the change was approved.",
+   "expect": "reject",
+   "category": "wrong approval",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "endpoint",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E2"
+   ],
+   "statement": "The change for guest was recorded as approved.",
+   "expect": "reject",
+   "category": "wrong approval",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "interpretations",
+   "evidence_ids": [
+    "S1-E26",
+    "S1-E27"
+   ],
+   "statement": "This confirms rahul.m was compromised.",
+   "expect": "reject",
+   "category": "overclaim",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E28"
+   ],
+   "statement": "The attacker gained access and installed malware.",
+   "expect": "reject",
+   "category": "overclaim",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "endpoint",
+   "incident": 1,
+   "section": "interpretations",
+   "evidence_ids": [
+    "S1-E3"
+   ],
+   "statement": "The PowerShell command was successfully executed by malware.",
+   "expect": "reject",
+   "category": "overclaim",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "interpretations",
+   "evidence_ids": [
+    "S1-E26",
+    "S1-E27"
+   ],
+   "statement": "The account is a ransomware victim.",
+   "expect": "reject",
+   "category": "overclaim",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E17",
+    "S1-E18",
+    "S1-E19",
+    "S1-E20",
+    "S1-E21"
+   ],
+   "statement": "The failed logins likely show a password attack.",
+   "expect": "reject",
+   "category": "speculation in observation",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "interpretations",
+   "evidence_ids": [
+    "S1-E27"
+   ],
+   "statement": "The administrator change is a priority.",
+   "expect": "reject",
+   "category": "unhedged interpretation",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "interpretations",
+   "evidence_ids": [
+    "S1-E26"
+   ],
+   "statement": "Further investigation is needed.",
+   "expect": "reject",
+   "category": "generic",
+   "got": "reject",
+   "correct": true
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E17",
+    "S1-E18",
+    "S1-E19",
+    "S1-E20",
+    "S1-E21"
+   ],
+   "statement": "There were no failed logins for rahul.m.",
+   "expect": "reject",
+   "category": "negation inverted",
+   "known_gap": true,
+   "got": "accept",
+   "correct": false
+  },
+  {
+   "sample": "endpoint",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E2"
+   ],
+   "statement": "John was added to local Administrators on WS-11.",
+   "expect": "reject",
+   "category": "invented name at sentence start",
+   "known_gap": true,
+   "got": "accept",
+   "correct": false
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E26"
+   ],
+   "statement": "rahul.m logged on from the finance department network.",
+   "expect": "reject",
+   "category": "invented context",
+   "known_gap": true,
+   "got": "accept",
+   "correct": false
+  },
+  {
+   "sample": "auth",
+   "incident": 1,
+   "section": "observations",
+   "evidence_ids": [
+    "S1-E17",
+    "S1-E18",
+    "S1-E19",
+    "S1-E20",
+    "S1-E21"
+   ],
+   "statement": "The failures for rahul.m came before the logon from 185.220.101.4.",
+   "expect": "accept",
+   "category": "supported",
+   "got": "accept",
+   "correct": true
+  }
+ ]
+}
