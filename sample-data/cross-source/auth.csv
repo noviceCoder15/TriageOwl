@@ -1,0 +1,7 @@
+time,user,device,ip,event,detail
+2026-11-23T12:00:00Z,CaseUser,WS-CROSS,192.0.2.99,login_failed,Test
+2026-11-23T12:01:00Z,CaseUser,WS-CROSS,192.0.2.99,login_failed,Test
+2026-11-23T12:02:00Z,CaseUser,WS-CROSS,192.0.2.99,login_failed,Test
+2026-11-23T12:03:00Z,CaseUser,WS-CROSS,192.0.2.99,login_failed,Test
+2026-11-23T12:04:00Z,CaseUser,WS-CROSS,192.0.2.99,login_failed,Test
+2026-11-23T12:05:00Z,CaseUser,WS-CROSS,192.0.2.99,login_success,Test

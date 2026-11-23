@@ -1,0 +1,19 @@
+[
+  {
+    "time": "2026-11-23T12:07:00Z",
+    "user": "caseuser",
+    "device": "ws-cross",
+    "ip": "192.0.2.10",
+    "event": "group_change",
+    "detail": "Synthetic test",
+    "approved": false
+  },
+  {
+    "time": "2026-11-23T12:08:00Z",
+    "user": "caseuser",
+    "device": "ws-cross",
+    "ip": "192.0.2.10",
+    "event": "process_start",
+    "detail": "powershell.exe -enc SYNTHETIC_NOT_EXECUTED"
+  }
+]

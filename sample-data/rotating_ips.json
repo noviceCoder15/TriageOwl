@@ -1,0 +1,50 @@
+[
+  {
+    "time": "2026-11-23T12:00:00Z",
+    "user": "alice",
+    "device": "WS-01",
+    "ip": "192.0.2.1",
+    "event": "login_failed",
+    "detail": "Synthetic test"
+  },
+  {
+    "time": "2026-11-23T12:01:00Z",
+    "user": "alice",
+    "device": "WS-01",
+    "ip": "192.0.2.2",
+    "event": "login_failed",
+    "detail": "Synthetic test"
+  },
+  {
+    "time": "2026-11-23T12:02:00Z",
+    "user": "alice",
+    "device": "WS-01",
+    "ip": "192.0.2.3",
+    "event": "login_failed",
+    "detail": "Synthetic test"
+  },
+  {
+    "time": "2026-11-23T12:03:00Z",
+    "user": "alice",
+    "device": "WS-01",
+    "ip": "192.0.2.4",
+    "event": "login_failed",
+    "detail": "Synthetic test"
+  },
+  {
+    "time": "2026-11-23T12:04:00Z",
+    "user": "alice",
+    "device": "WS-01",
+    "ip": "192.0.2.5",
+    "event": "login_failed",
+    "detail": "Synthetic test"
+  },
+  {
+    "time": "2026-11-23T12:05:00Z",
+    "user": "alice",
+    "device": "WS-01",
+    "ip": "192.0.2.6",
+    "event": "login_failed",
+    "detail": "Synthetic test"
+  }
+]

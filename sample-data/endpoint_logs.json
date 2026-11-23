@@ -1,0 +1,5 @@
+[
+ {"timestamp":"2026-11-20T14:00:00Z","username":"analyst","hostname":"WS-10","event":"group_change","detail":"Added to local Administrators","approved":true},
+ {"timestamp":"2026-11-20T14:05:00Z","username":"guest","hostname":"WS-11","event":"group_change","detail":"Added to local Administrators","approved":false},
+ {"timestamp":"2026-11-20T14:07:00Z","username":"guest","hostname":"WS-11","event":"process_start","commandline":"powershell.exe -encodedcommand TEST_ONLY_NOT_EXECUTED"}
+]
